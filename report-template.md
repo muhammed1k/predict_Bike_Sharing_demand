@@ -3,14 +3,15 @@
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: the data needs to be preprocessed to give the model some complexity by creating some features, first i ensured that there were no negative values and if there was i changed them to zeros using np.where() then i loaded the sample submission and replaced the count columns with the predictions and submitted.
+ the data needs to be preprocessed to give the model some complexity by creating some features, first i ensured that there were no negative values and if there was i changed them to zeros using np.where() then i loaded the sample submission and replaced the count columns with the predictions and submitted.
 
 ### What was the top ranked model that performed?
-TODO: for the inital model a WeightedEnsemble_L3 model top performed with a score -52.808431. overall the hpo tuned model overperformed and the top model in it is XGBoost_BAG_L1/T1 with a score -37.907657 
+ for the inital model a WeightedEnsemble_L3 model top performed with a score -52.808431. overall the hpo tuned model overperformed and the top model in it is XGBoost_BAG_L1/T1 with a score -37.907657 
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO:   
+   
+        
         - the train dataset had 10886 data points in the training sets no null values,test set has 6493 data points
 
         - there are 4 categorical features season and weather each feature has 4 different values encoded with integers (1,2,3,4) and holiday and workingday are binary encoded (0 or 1).
@@ -32,14 +33,14 @@ TODO:
 
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: the root mean squared error went down from 1.81007 to 0.47512, adding more features helps the model find the right answer and guide it within the data and increase some level of complexity for example the features extracted from the datetime guided the model which particular days of the week have the most demand (saturday and fridays in the data)
+ the root mean squared error went down from 1.81007 to 0.47512, adding more features helps the model find the right answer and guide it within the data and increase some level of complexity for example the features extracted from the datetime guided the model which particular days of the week have the most demand (saturday and fridays in the data)
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: the root mean squared error went down from 0.47512 to 0.41937
+ the root mean squared error went down from 0.47512 to 0.41937
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: trying to engineer more features and if we have more data we can get a much much better model
+ trying to engineer more features and if we have more data we can get a much much better model
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |    | model        | hpo1                                                                                                        | hpo2                                                   | hpo3                                                  |   score |
@@ -50,18 +51,18 @@ TODO: trying to engineer more features and if we have more data we can get a muc
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-TODO: Replace the image below with your own.
+ Replace the image below with your own.
 
 ![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
+ Replace the image below with your own.
 
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: downloaded the data using kaggle api and loaded the data into pandas dataframe:
+ downloaded the data using kaggle api and loaded the data into pandas dataframe:
         - using eda i figured out which is the categorical features and the numerical features 
         - the cat features were already encoded 
         - the datetime feature was used to extract features that helped detecting which days have more demand
