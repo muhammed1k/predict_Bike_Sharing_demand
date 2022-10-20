@@ -53,7 +53,7 @@
 
 
 
-![model_train_score.png](img/model_train_score.png)
+![model_train_score.png](img/model_train_score.jpg)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
