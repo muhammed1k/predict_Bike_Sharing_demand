@@ -59,7 +59,7 @@
 
 
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](img/model_test_score.jpg)
 
 ## Summary
  downloaded the data using kaggle api and loaded the data into pandas dataframe:
